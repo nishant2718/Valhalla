@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		962F8D3C2634DC3600423429 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F8D3B2634DC3600423429 /* DependencyContainer.swift */; };
-		962F8D3F2634DC4000423429 /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F8D3E2634DC4000423429 /* ServiceKey.swift */; };
 		962F8D492634DE5900423429 /* ValhallaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F8D482634DE5900423429 /* ValhallaTests.swift */; };
 		962F8D4B2634DE5900423429 /* Valhalla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963482232631A18A0024DFE5 /* Valhalla.framework */; };
 		963482282631A18A0024DFE5 /* Valhalla.h in Headers */ = {isa = PBXBuildFile; fileRef = 963482262631A18A0024DFE5 /* Valhalla.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96F319652635B19D00D6112F /* Valhalla.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 96F319642635B19C00D6112F /* Valhalla.podspec */; };
 		96F319712635B60200D6112F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 96F319702635B60200D6112F /* LICENSE */; };
 		96F319752635B63E00D6112F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96F319742635B63E00D6112F /* README.md */; };
+		96F3197B2635BB7900D6112F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F319792635BB7900D6112F /* DependencyContainer.swift */; };
+		96F3197C2635BB7900D6112F /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3197A2635BB7900D6112F /* ServiceKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		962F8D3B2634DC3600423429 /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
-		962F8D3E2634DC4000423429 /* ServiceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceKey.swift; sourceTree = "<group>"; };
 		962F8D462634DE5900423429 /* ValhallaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValhallaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		962F8D482634DE5900423429 /* ValhallaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValhallaTests.swift; sourceTree = "<group>"; };
 		962F8D4A2634DE5900423429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +37,8 @@
 		96F319642635B19C00D6112F /* Valhalla.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = Valhalla.podspec; sourceTree = SOURCE_ROOT; };
 		96F319702635B60200D6112F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		96F319742635B63E00D6112F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		96F319792635BB7900D6112F /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		96F3197A2635BB7900D6112F /* ServiceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +72,8 @@
 		963482192631A18A0024DFE5 = {
 			isa = PBXGroup;
 			children = (
+				96F319782635BB7900D6112F /* Classes */,
 				96F319532635A6EA00D6112F /* Podspec Metadata */,
-				96F319232635A24D00D6112F /* Classes */,
 				963482242631A18A0024DFE5 /* Products */,
 				963482252631A18A0024DFE5 /* Valhalla */,
 				962F8D472634DE5900423429 /* ValhallaTests */,
@@ -98,15 +98,6 @@
 			path = Valhalla;
 			sourceTree = "<group>";
 		};
-		96F319232635A24D00D6112F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				962F8D3B2634DC3600423429 /* DependencyContainer.swift */,
-				962F8D3E2634DC4000423429 /* ServiceKey.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		96F319532635A6EA00D6112F /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +106,16 @@
 				96F319702635B60200D6112F /* LICENSE */,
 			);
 			path = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		96F319782635BB7900D6112F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				96F319792635BB7900D6112F /* DependencyContainer.swift */,
+				96F3197A2635BB7900D6112F /* ServiceKey.swift */,
+			);
+			name = Classes;
+			path = Valhalla/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962F8D3C2634DC3600423429 /* DependencyContainer.swift in Sources */,
-				962F8D3F2634DC4000423429 /* ServiceKey.swift in Sources */,
+				96F3197B2635BB7900D6112F /* DependencyContainer.swift in Sources */,
+				96F3197C2635BB7900D6112F /* ServiceKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +257,7 @@
 		962F8D4E2634DE5900423429 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BV7V7SB67;
 				INFOPLIST_FILE = ValhallaTests/Info.plist;
@@ -274,6 +276,7 @@
 		962F8D4F2634DE5900423429 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BV7V7SB67;
 				INFOPLIST_FILE = ValhallaTests/Info.plist;

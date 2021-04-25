@@ -8,6 +8,6 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "12.0"
   spec.tvos.deployment_target = "12.0"
   spec.source       = { :git => "https://github.com/nishant2718/Valhalla.git", :tag => "#{spec.version}" }
-  spec.source_files = 'Classes/**/*.swift'
+  spec.source_files = 'Valhalla/**/*.swift'
   spec.swift_version = "5.0", "5.1"
 end
