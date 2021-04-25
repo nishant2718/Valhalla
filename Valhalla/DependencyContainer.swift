@@ -6,7 +6,7 @@
 //
 
 /**
- `DependencyContainer` will allow you to do _Dependendency Injection_ by
+ `DependencyContainer` will allow you to do _Dependency Injection_ by
  associating abstractions to concrete implementations.
  */
 public class DependencyContainer {
