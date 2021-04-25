@@ -46,4 +46,10 @@ public class DependencyContainer {
         return services[serviceKey] as? T
     }
     
+    
+    /// Remove all registered dependencies.
+    public func reset() {
+        services.removeAll()
+    }
+    
 }

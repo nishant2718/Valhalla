@@ -9,18 +9,41 @@
 /* Begin PBXBuildFile section */
 		962F8D3C2634DC3600423429 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F8D3B2634DC3600423429 /* DependencyContainer.swift */; };
 		962F8D3F2634DC4000423429 /* ServiceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F8D3E2634DC4000423429 /* ServiceKey.swift */; };
+		962F8D492634DE5900423429 /* ValhallaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F8D482634DE5900423429 /* ValhallaTests.swift */; };
+		962F8D4B2634DE5900423429 /* Valhalla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963482232631A18A0024DFE5 /* Valhalla.framework */; };
 		963482282631A18A0024DFE5 /* Valhalla.h in Headers */ = {isa = PBXBuildFile; fileRef = 963482262631A18A0024DFE5 /* Valhalla.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		962F8D4C2634DE5900423429 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9634821A2631A18A0024DFE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 963482222631A18A0024DFE5;
+			remoteInfo = Valhalla;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		962F8D3B2634DC3600423429 /* DependencyContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		962F8D3E2634DC4000423429 /* ServiceKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceKey.swift; sourceTree = "<group>"; };
+		962F8D462634DE5900423429 /* ValhallaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValhallaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		962F8D482634DE5900423429 /* ValhallaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValhallaTests.swift; sourceTree = "<group>"; };
+		962F8D4A2634DE5900423429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		963482232631A18A0024DFE5 /* Valhalla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Valhalla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		963482262631A18A0024DFE5 /* Valhalla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Valhalla.h; sourceTree = "<group>"; };
 		963482272631A18A0024DFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		962F8D432634DE5900423429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962F8D4B2634DE5900423429 /* Valhalla.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		963482202631A18A0024DFE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,10 +54,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		962F8D472634DE5900423429 /* ValhallaTests */ = {
+			isa = PBXGroup;
+			children = (
+				962F8D482634DE5900423429 /* ValhallaTests.swift */,
+				962F8D4A2634DE5900423429 /* Info.plist */,
+			);
+			path = ValhallaTests;
+			sourceTree = "<group>";
+		};
 		963482192631A18A0024DFE5 = {
 			isa = PBXGroup;
 			children = (
 				963482252631A18A0024DFE5 /* Valhalla */,
+				962F8D472634DE5900423429 /* ValhallaTests */,
 				963482242631A18A0024DFE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				963482232631A18A0024DFE5 /* Valhalla.framework */,
+				962F8D462634DE5900423429 /* ValhallaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +106,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		962F8D452634DE5900423429 /* ValhallaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 962F8D502634DE5900423429 /* Build configuration list for PBXNativeTarget "ValhallaTests" */;
+			buildPhases = (
+				962F8D422634DE5900423429 /* Sources */,
+				962F8D432634DE5900423429 /* Frameworks */,
+				962F8D442634DE5900423429 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				962F8D4D2634DE5900423429 /* PBXTargetDependency */,
+			);
+			name = ValhallaTests;
+			productName = ValhallaTests;
+			productReference = 962F8D462634DE5900423429 /* ValhallaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		963482222631A18A0024DFE5 /* Valhalla */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9634822B2631A18A0024DFE5 /* Build configuration list for PBXNativeTarget "Valhalla" */;
@@ -96,8 +148,12 @@
 		9634821A2631A18A0024DFE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					962F8D452634DE5900423429 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					963482222631A18A0024DFE5 = {
 						CreatedOnToolsVersion = 12.3;
 						LastSwiftMigration = 1230;
@@ -118,11 +174,19 @@
 			projectRoot = "";
 			targets = (
 				963482222631A18A0024DFE5 /* Valhalla */,
+				962F8D452634DE5900423429 /* ValhallaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		962F8D442634DE5900423429 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		963482212631A18A0024DFE5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -133,6 +197,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		962F8D422634DE5900423429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				962F8D492634DE5900423429 /* ValhallaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9634821F2631A18A0024DFE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,7 +216,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		962F8D4D2634DE5900423429 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 963482222631A18A0024DFE5 /* Valhalla */;
+			targetProxy = 962F8D4C2634DE5900423429 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		962F8D4E2634DE5900423429 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BV7V7SB67;
+				INFOPLIST_FILE = ValhallaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nishant.ValhallaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		962F8D4F2634DE5900423429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7BV7V7SB67;
+				INFOPLIST_FILE = ValhallaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nishant.ValhallaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		963482292631A18A0024DFE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -321,6 +437,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		962F8D502634DE5900423429 /* Build configuration list for PBXNativeTarget "ValhallaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				962F8D4E2634DE5900423429 /* Debug */,
+				962F8D4F2634DE5900423429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9634821D2631A18A0024DFE5 /* Build configuration list for PBXProject "Valhalla" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
