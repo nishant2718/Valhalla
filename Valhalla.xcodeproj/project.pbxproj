@@ -12,9 +12,9 @@
 		962F8D492634DE5900423429 /* ValhallaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962F8D482634DE5900423429 /* ValhallaTests.swift */; };
 		962F8D4B2634DE5900423429 /* Valhalla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963482232631A18A0024DFE5 /* Valhalla.framework */; };
 		963482282631A18A0024DFE5 /* Valhalla.h in Headers */ = {isa = PBXBuildFile; fileRef = 963482262631A18A0024DFE5 /* Valhalla.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96F319592635AFCA00D6112F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96F319582635AFCA00D6112F /* README.md */; };
-		96F319612635B00100D6112F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 96F319602635B00100D6112F /* LICENSE */; };
 		96F319652635B19D00D6112F /* Valhalla.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 96F319642635B19C00D6112F /* Valhalla.podspec */; };
+		96F319712635B60200D6112F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 96F319702635B60200D6112F /* LICENSE */; };
+		96F319752635B63E00D6112F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96F319742635B63E00D6112F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +36,9 @@
 		963482232631A18A0024DFE5 /* Valhalla.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Valhalla.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		963482262631A18A0024DFE5 /* Valhalla.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Valhalla.h; sourceTree = "<group>"; };
 		963482272631A18A0024DFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96F319582635AFCA00D6112F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		96F319602635B00100D6112F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		96F319642635B19C00D6112F /* Valhalla.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = Valhalla.podspec; sourceTree = SOURCE_ROOT; };
+		96F319702635B60200D6112F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		96F319742635B63E00D6112F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				96F319642635B19C00D6112F /* Valhalla.podspec */,
-				96F319582635AFCA00D6112F /* README.md */,
-				96F319602635B00100D6112F /* LICENSE */,
+				96F319742635B63E00D6112F /* README.md */,
+				96F319702635B60200D6112F /* LICENSE */,
 			);
 			path = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -216,9 +216,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F319752635B63E00D6112F /* README.md in Resources */,
+				96F319712635B60200D6112F /* LICENSE in Resources */,
 				96F319652635B19D00D6112F /* Valhalla.podspec in Resources */,
-				96F319612635B00100D6112F /* LICENSE in Resources */,
-				96F319592635AFCA00D6112F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
