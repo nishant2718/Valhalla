@@ -20,6 +20,8 @@ First, some context:
 - I'll assume there's a `AppDependencyContainer` file, where all dependencies can be registered.
 - Since Valhalla returns a container of registered dependencies, you'll pass this container down to wherever it's needed (according to your app architecture's guidelines). 
 
+### Registration
+
 ```swift
 // Example
 
@@ -40,4 +42,12 @@ public static func create() -> DependencyContainer {
 ```
 
 
+
+### Resolution
+
+To resolve your dependencies, you'll do something like:
+
+```swift
+dependencyContainer.resolve(type: PreferenceManager.self) ?? PreferenceManager()
+```
 
